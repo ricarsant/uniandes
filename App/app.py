@@ -167,6 +167,7 @@ def countElementsByCriteria1(criteria, column, lst):
                     if elemento1['\ufeffid'] == id1:
                         if float(elemento1["vote_average"])>= 6:
                             promedio.append(float(elemento1["vote_average"]))
+                            print("sale")
                             break
 
 
