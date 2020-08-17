@@ -136,6 +136,8 @@ def countElementsByCriteria1(criteria, column, lst):
 
     promedio =[]
 
+    cuantos = 0
+
 
     loadCSVFile("Data\\AllMoviesCastingRaw.csv", lista2)
     print("len lista2 ", len(lista2))
@@ -159,6 +161,7 @@ def countElementsByCriteria1(criteria, column, lst):
             if criteria.lower() in element[column].lower(): #filtrar por palabra clave 
                 id1 = element['id']
                 #print("iddddd 1 ..", id1)
+                cuantos+=1
 
                 for elemento1 in lst:    #encontarar vote_average las peliculas del director
                     if elemento1['\ufeffid'] == id1:
