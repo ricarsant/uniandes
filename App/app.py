@@ -175,7 +175,7 @@ def countElementsByCriteria1(criteria, column, lst):
 
         t1_stop = process_time() #tiempo final
         print("Tiempo de ejecución ",t1_stop-t1_start," segundos")
-    return promedio
+    return promedio,cuantos
     
 
 def main():
